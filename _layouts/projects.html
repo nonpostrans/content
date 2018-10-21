@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<div class="flex_container">
+ <main class="cards">
+ {% for post in site.posts %}
+  <article class="card">
+   <img src="/assets/images/{{ post.image }}" alt="Avatar" style="width:100%">
+   <div class="text">
+     <h3>{{ post.title }}</h3>
+     <p>Hurra</p>
+   </div>
+  </article>
+ {% endfor %}
+ </main>
+</div>
